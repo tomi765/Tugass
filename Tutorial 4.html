@@ -7,56 +7,80 @@
     <title> Tutorial 4 </title>
 </head>
 <body>
-       <!-- header-->
-<div class="bg-teal-600 px-4 py-3 text-white">
-    <p class="text-center text-sm font-medium">
-      Tutorial
-      
-    </p>
-  </div>
- <!-- end header-->
 
-<!-- frame -->
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video YouTube</title>
-    <style>
-        .video-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* Agar tetap di tengah secara vertikal */
-        }
+  <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Tutorial</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f0f0f0;
+                    display: flex;
+                    flex-direction: column; /* Stack elements vertically */
+                    align-items: center; /* Center horizontally */
+                    min-height: 100vh;
+                    margin: 0;
+                }
+        
+                .header { /* Style for the header div */
+                    background-color: #008080; /* Teal */
+                    color: white;
+                    padding: 10px;
+                    width: 100%;
+                    text-align: center;
+                }
+        
+                .video-container {
+                    width: 80%;
+                    max-width: 800px;
+                    margin: 20px 0; /* Add some top/bottom margin */
+                }
+        
+                .video-container iframe {
+                    width: 100%;
+                    height: 450px;
+                    border-radius: 10px;
+                }
+        
+                @media (max-width: 600px) {
+                    .video-container iframe {
+                        height: 250px;
+                    }
+                }
+                .footer {
+                    position: fixed;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    padding: 10px;
+                    background-color: #008080; /* Teal color */
+                    color: white;
+                    text-align: center;
+                }
+            </style>
+        </head>
+        <body>
+        
+            <div class="header">  <p class="text-center text-sm font-medium">
+                    Tutorial
+                </p>
+            </div>
+        
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/m573wYOic9A?si=zqOQrA4n_KxIegKH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        
+            <div class="footer">
+                <p class="text-center text-sm font-medium">
+                    TUTORIAL
+                </p>
+            </div>
+        
+        </body>
+        </html>
 
-        iframe {
-            width: 80%; /* Sesuaikan ukuran */
-            max-width: 800px; /* Batasan maksimal */
-            height: 450px; /* Sesuaikan dengan aspek rasio */
-        }
 
-        @media (max-width: 600px) {
-            iframe {
-                height: 250px; /* Ukuran lebih kecil untuk layar kecil */
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="video-container">
-        <iframe 
-            src=" https://youtu.be/a9k2Zt4USrM?t=1 "
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
-        </iframe>
-    </div>
-</body>
-</html>
-
-<!-- end frame-->  
 </body>
 </html>
